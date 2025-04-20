@@ -6,6 +6,6 @@ podman stop website || true
 podman rm website || true
 
 # Run new container
-podman run --rm --network=host website:new
+podman run --rm -d --network=host website:new
 
 
