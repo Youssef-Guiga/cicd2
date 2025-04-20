@@ -6,7 +6,7 @@ pipeline {
                 echo 'Building...'
                 sh '''
                     podman build -t website:new .
-                    FROM nginx:alpine
+                    FROM docker.io/nginx:alpine
                 '''
             }
         }
