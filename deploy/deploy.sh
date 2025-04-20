@@ -6,6 +6,6 @@ podman stop website || true
 podman rm website || true
 
 # Run new container
-podman run -d --name website -p 8090:8090 website:new
+podman run --rm -d --network=host website:new
 
 
